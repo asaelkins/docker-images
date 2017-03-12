@@ -1,6 +1,6 @@
-# Official Docker container for Plex Media Server
+# First Attempt at Docker Container Creation
 
-# plexinc/pms-docker
+# sebp/elkx
 
 With our easy-to-install Plex Media Server software and your Plex apps, available on all your favorite phones, tablets, streaming devices, gaming consoles, and smart TVs, you can stream your video, music, and photo collections any time, anywhere, to any device.
 
