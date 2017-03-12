@@ -1,4 +1,4 @@
-FROM sebp/elkx
+FROM sebp/elk
 LABEL org.freenas.interactive="false" 		\
       org.freenas.version="1.0.0.520"		\
       org.freenas.upgradeable="true"		\
