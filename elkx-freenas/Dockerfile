@@ -1,13 +1,13 @@
 FROM sebp/elkx
 LABEL org.freenas.interactive="false" 		\
-      org.freenas.version="1.0.0.520"		\
+      org.freenas.version="1.0.0.002"		\
       org.freenas.upgradeable="true"		\
       org.freenas.expose-ports-at-host="true"	\
       org.freenas.autostart="true"		\
       org.freenas.capabilities-add="NET_BROADCAST" \
       org.freenas.web-ui-protocol="http"	\
       org.freenas.web-ui-port=5601		\
-      org.freenas.web-ui-path="web"		\
+      org.freenas.web-ui-path="\"		\
       org.freenas.port-mappings="5601:5601/tcp,5000:5000/tcp,514:514/tcp,9200:9200/tcp,514:514/udp"			\
       org.freenas.volumes="[					\
           {							\
