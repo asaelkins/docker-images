@@ -2,6 +2,8 @@
 
 # sebp/elkx
 
+kibana - chamgeme (I think)
+
 With our easy-to-install Plex Media Server software and your Plex apps, available on all your favorite phones, tablets, streaming devices, gaming consoles, and smart TVs, you can stream your video, music, and photo collections any time, anywhere, to any device.
 
 ## Usage
