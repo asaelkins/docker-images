@@ -7,22 +7,22 @@ LABEL org.freenas.interactive="false" 		\
       org.freenas.capabilities-add="NET_BROADCAST" \
       org.freenas.web-ui-protocol="http"	\
       org.freenas.web-ui-port=5601		\
-      org.freenas.web-ui-path=""		\
+#      org.freenas.web-ui-path=""		\    web-ui-path not needed for Kibana
       org.freenas.port-mappings="5601:5601/tcp,5000:5000/tcp,514:514/tcp,9200:9200/tcp,514:514/udp"			\
-      org.freenas.volumes="[					\
-          {							\
-              \"name\": \"/config\",				\
-              \"descr\": \"Config storage space\"		\
-          },							\
-          {							\
-              \"name\": \"/transcode\",				\
-              \"descr\": \"Video transcode directory\"		\
-          },							\
-          {							\
-              \"name\": \"/data\",				\
-              \"descr\": \"Media volume\"			\
-          }							\
-      ]"							\
+#      org.freenas.volumes="[					\
+#          {							\
+#              \"name\": \"/config\",				\
+#              \"descr\": \"Config storage space\"		\
+#          },							\
+#          {							\
+#              \"name\": \"/transcode\",				\
+#              \"descr\": \"Video transcode directory\"		\
+#          },							\
+#          {							\
+#              \"name\": \"/data\",				\
+#              \"descr\": \"Media volume\"			\
+#          }							\
+#      ]"							\
       org.freenas.settings="[ 					\
           {							\
               \"env\": \"TZ\",					\
