@@ -1,6 +1,6 @@
 FROM sebp/elkx:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1.02" \
+      org.freenas.version="1.0.3" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
@@ -12,6 +12,10 @@ LABEL org.freenas.interactive="false" \
           {                                           \
               \"name\": \"/var/lib/elasticsearch\",   \
               \"descr\": \"ES data\"                  \
+          },                                          \
+          {                                           \
+              \"name\": \"/opt/kibana/config\",       \
+              \"descr\": \"Kibana config data\"       \
           },                                          \
           {                                           \
               \"name\": \"/etc/logstash/conf.d\",     \
