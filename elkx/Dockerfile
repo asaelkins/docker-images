@@ -1,7 +1,7 @@
 FROM sebp/elkx:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1.01" \
-      org.freenas.upgradeable="false" \
+      org.freenas.version="1.02" \
+      org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
