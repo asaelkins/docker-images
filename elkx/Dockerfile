@@ -1,6 +1,6 @@
 FROM sebp/elkx:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1" \
+      org.freenas.version="1.01" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
