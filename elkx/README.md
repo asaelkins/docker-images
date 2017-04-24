@@ -6,6 +6,7 @@ Elasticsearch, Logstash, Kibana (ELK) Docker image, based on the Docker image of
 
 - **/var/lib/elasticsearch** Elasticsearch data.
 - **/etc/logstash/conf.d** Logstash config folder.
+- **/opt/kibana/config** Kibana.yml folder.
 
 # Important
 As explained in https://github.com/spujadas/elk-docker/issues/92#issuecomment-263152557 please make sure the VM running this container is configured correctly.
