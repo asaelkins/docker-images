@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false" 		\
       org.freenas.capabilities-add="NET_BROADCAST" \
       org.freenas.web-ui-protocol="http"	\
       org.freenas.web-ui-port=5601		    \
-      org.freenas.port-mappings="5601:5601/tcp,5000:5000/tcp,514:514/tcp,9200:9200/tcp,514:514/udp"			\
+      org.freenas.port-mappings="5601:5601/tcp,5000:5000/tcp,514:514/tcp,9200:9200/tcp,5002:5002/udp,514:514/udp"			\
       org.freenas.volumes="[                    \
           {                                     \
               \"name\": \"/opt/kibana/config\", \
