@@ -1,6 +1,6 @@
 FROM freenas/elk:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1.0.8" \
+      org.freenas.version="1.0.9" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
@@ -22,4 +22,22 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"logstash config\"          \
           }                                           \
       ]" \
-      
+###############################################################################
+#                                INSTALLATION
+###############################################################################
+
+ENV XPACK_VERSION 5.4.0
+ENV XPACK_PACKAGE x-pack-${XPACK_VERSION}.zip
+
+WORKDIR /tmp
+RUN curl -O https://artifacts.elastic.co/downloads/packs/x-pack/${XPACK_PACKAGE} \
+ && gosu elasticsearch ${ES_HOME}/bin/elasticsearch-plugin install \
+      -Edefault.path.conf=/etc/elasticsearch \
+      file:///tmp/${XPACK_PACKAGE} --batch \
+ && gosu kibana ${KIBANA_HOME}/bin/kibana-plugin install \
+      file:///tmp/${XPACK_PACKAGE} \
+ && rm -f ${XPACK_PACKAGE}
+
+RUN sed -i -e 's/curl localhost:9200/curl -u elastic:changeme localhost:9200/' \
+      /usr/local/bin/start.sh
+
