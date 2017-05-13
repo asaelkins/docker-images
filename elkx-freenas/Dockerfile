@@ -1,6 +1,6 @@
 FROM sebp/elkx
 LABEL org.freenas.interactive="false" 		\
-      org.freenas.version="1.0.0.006"		  \
+      org.freenas.version="1.0.007"		  \
       org.freenas.upgradeable="true"		  \
       org.freenas.expose-ports-at-host="true"	\
       org.freenas.autostart="true"		    \
@@ -21,4 +21,4 @@ LABEL org.freenas.interactive="false" 		\
               \"name\": \"/etc/logstash/conf.d\",     \
               \"descr\": \"logstash config\"          \
           }                                           \                 
-      ]" \
+      ]"
