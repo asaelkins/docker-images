@@ -12,5 +12,5 @@ LABEL org.freenas.interactive="false" 		\
           {                                     \
               \"name\": \"/opt/kibana/config\", \
               \"descr\": \"Kibana.yml file\"    \
-          }
+          }                                     \
       ]" \
