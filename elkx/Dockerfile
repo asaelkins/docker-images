@@ -26,8 +26,7 @@ LABEL org.freenas.interactive="false" \
 #                                INSTALLATION
 ###############################################################################
 
-ENV XPACK_VERSION="5.4.0"
-ENV XPACK_PACKAGE="x-pack-${XPACK_VERSION}.zip"
+ENV XPACK_VERSION="5.4.0" XPACK_PACKAGE="x-pack-${XPACK_VERSION}.zip"
 
 WORKDIR /tmp
 RUN curl -O https://artifacts.elastic.co/downloads/packs/x-pack/${XPACK_PACKAGE} \
